@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="form">
+        <h1>Form</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" />
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday" />
+          <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="woman" name="gender" value="woman" />
+            <label for="woman">Woman</label>
+            <input type="radio" id="man" name="gender" value="man" />
+            <label for="man">Man</label>
+          </fieldset>
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+          <label for="about">About me:</label>
+          <textarea
+            id="about"
+            name="about"
+            rows="4"
+            cols="30"
+            placeholder="Tell about yourself"
+          ></textarea>
+          <input type="checkbox" id="agree" name="agree" value="agree" />
+          <label for="agree">I agree</label>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <button type="button">Click</button>
+    </main>
+    <footer>
+      <p>My Form</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+:root {
+  --main-color: blueviolet;
+  --main-background: lavenderblush;
+}
+body {
+  background-image: url('../images/billiards.jpg.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+section {
+  background-color: var(--main-background);
+}
+section > h2 {
+  color: darkblue;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h2 + p {
+  font-size: 18px;
+}
+#about p::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+}
+#cat p::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+}
+#hobbies li::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+}
+#cat p::first-line {
+  color: purple;
+}
+p {
+  font-size: 16px;
+}
+img {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+#about {
+  color: var(--main-color);
+}
+#cat {
+  color: darkblue;
+}
+#hobbies {
+  color: rgb(72, 122, 231);
+}
+#gallery {
+  color: rgb(206, 85, 105);
+}
+#contacts {
+  color: var(--main-color);
+}
+button[type='submit'] {
+  background-color: green;
+  color: white;
+}
+button[type='reset'] {
+  background-color: red;
+  color: white;
+}
+button {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+button:hover {
+  color: darkgray;
+}
+button:focus {
+  outline: 1px solid black;
+}
+#about:first-child {
+  color: darkgreen;
+} /*Найбільша специфічність:(1, 1, 0)*/
+#cat:nth-child(2) {
+  color: brown;
+} /*Найбільша специфічність:(1, 1, 0)*/
+#hobbies:nth-child(3) {
+  color: darksalmon;
+} /*Найбільша специфічність:(1, 1, 0)*/
+#gallery:nth-child(4) {
+  color: darkgoldenrod;
+} /*Найбільша специфічність:(1, 1, 0)*/
+label {
+  color: darkblue;
+  font-weight: bold;
+}
+input {
+  border: 2px solid darkblue;
+  border-radius: 8px;
+}
+textarea {
+  border: 2px solid darkblue;
+  border-radius: 10px;
+}
+legend {
+  color: darkblue;
+  font-weight: bold;
+}
+:is(h1, h2, h3) {
+  color: darkblue;
+}
+:is(header, footer) a {
+  color: fuchsia;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+nav ul {
+  list-style-type: none;
+}
+header {
+  background-color: var(--main-background);
+  color: var(--main-color);
+  border: 2px solid blueviolet;
+}
+footer {
+  background-color: var(--main-background);
+  color: var(--main-color);
+  border: 2px solid blueviolet;
+}
+::selection {
+  background-color: lightpink;
+  color: black;
+}
+#about h1::before {
+  content: '*';
+}
+#about h1::after {
+  content: '*';
+}
