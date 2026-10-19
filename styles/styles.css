@@ -3,6 +3,7 @@
   --main-background: lavenderblush;
 }
 body {
+  font-family: 'Roboto', sans-serif;
   background-image: url('../images/billiards.jpg.png');
   background-repeat: no-repeat;
   background-position: top;
@@ -142,4 +143,18 @@ footer {
 }
 #about h1::after {
   content: '*';
+}
+.tables-page {
+  background: white;
+  color: black;
+}
+.tables-page table {
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+.tables-page th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
 }
