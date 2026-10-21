@@ -153,8 +153,7 @@ footer {
   margin-bottom: 25px;
 }
 .tables-page th,
-td {
+.tables-page td {
   border: 1px solid black;
   padding: 10px;
-  text-align: center;
 }
