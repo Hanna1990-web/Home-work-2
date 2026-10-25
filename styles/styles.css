@@ -2,6 +2,15 @@
   --main-color: blueviolet;
   --main-background: lavenderblush;
 }
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url('../images/billiards.jpg.png');
@@ -11,8 +20,10 @@ body {
 }
 section {
   background-color: var(--main-background);
+  margin-bottom: 20px;
+  border: 2px solid blueviolet;
 }
-section > h2 {
+section h2 {
   color: darkblue;
 }
 h1 {
@@ -156,4 +167,41 @@ footer {
 .tables-page td {
   border: 1px solid black;
   padding: 10px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header,
+footer {
+  padding: 30px 0;
+}
+section {
+  padding: 20px 0;
+}
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+h3 {
+  margin-bottom: 15px;
+}
+p {
+  margin-bottom: 15px;
+}
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+.menu a {
+  display: inline-block;
+  padding: 20px 30px;
+}
+footer p {
+  display: inline;
+  margin-right: 30px;
+}
+button {
+  cursor: pointer;
 }
