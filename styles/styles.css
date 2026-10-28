@@ -37,15 +37,15 @@ h2 + p {
 }
 #about p::first-letter {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 #cat p::first-letter {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 #hobbies li::first-letter {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 #cat p::first-line {
   color: purple;
@@ -106,7 +106,7 @@ button:focus {
 } /*Найбільша специфічність:(1, 1, 0)*/
 label {
   color: darkblue;
-  font-weight: bold;
+  font-weight: 700;
 }
 input {
   border: 2px solid darkblue;
@@ -118,14 +118,14 @@ textarea {
 }
 legend {
   color: darkblue;
-  font-weight: bold;
+  font-weight: 700;
 }
 :is(h1, h2, h3) {
   color: darkblue;
 }
 :is(header, footer) a {
   color: fuchsia;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
 }
 nav a:hover {
@@ -190,16 +190,28 @@ h3 {
 p {
   margin-bottom: 15px;
 }
+#about p:last-child,
+#cat p:last-child {
+  margin-bottom: 0;
+}
+section li:not(:last-child) {
+  margin-bottom: 15px;
+}
 .menu li {
   display: inline;
   margin-right: 20px;
+}
+.menu li:last-child {
+  margin-right: 0;
 }
 .menu a {
   display: inline-block;
   padding: 20px 30px;
 }
-footer p {
-  display: inline;
+footer address a {
+  display: inline-block;
+}
+footer address a:not(:last-child) {
   margin-right: 30px;
 }
 button {
